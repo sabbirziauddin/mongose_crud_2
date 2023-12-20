@@ -10,7 +10,7 @@ This is a simple CRUD (Create, Read, Update, Delete) project built with Express,
 - npm (v7 or higher)
 - MongoDB installed locally or accessible remotely
 
-### Installation
+### Installation process
 
 1. Clone the repository:
 
