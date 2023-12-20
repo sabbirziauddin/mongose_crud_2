@@ -1,40 +1,71 @@
-## An application built with TypeScript, Express, Mongoose, and Zod.
+# Express TypeScript CRUD Project
 
-## Prerequisites
+This is a simple CRUD (Create, Read, Update, Delete) project built with Express, TypeScript, Zod for input validation, and Mongoose for MongoDB database queries.
 
-- Node.js
-- npm
+## Getting Started
 
-## Installation
+### Prerequisites
 
-# Install dependencies
+- Node.js (v14 or higher)
+- npm (v7 or higher)
+- MongoDB installed locally or accessible remotely
 
-npm install
+### Installation
 
-# Configuration
+1. Clone the repository:
 
-Create a '.env' file in the root directory and add the following:
+    ```bash
+    git clone https://github.com/yourusername/your-repo.git
+    ```
 
-### Example .env file
+2. Install dependencies:
 
-- PORT=5000
-- MONGODB_URI=mongodb://localhost:27017/first-project
+    ```bash
+    npm install
+    ```
 
-(Adjust the values according to your preferences)
+3. Create a `.env` file in the root folder with the following content:
 
-# Scripts
+    ```env
+    PORT=4001
+    DATABASE_URL="mongodb://your-mongodb-url"
+    ```
 
-- npm run lint (Check for linting issues)
-- npm run lint:fix (Fix linting issues)
-- npm run prettier (Format code using Prettier)
-- npm run prettier:fix (Automatically fix code formatting issues)
+### Development
 
-## Run the server locally by
+- To run the server in development mode with automatic restarts on file changes:
 
-- npm run start:dev
-- Visit http://localhost:5000 in your browser.
+    ```bash
+    npm run start:dev
+    ```
 
-# Build for Production
+- To run linting:
 
-- npm run build
-# mongose_crud_2
+    ```bash
+    npm run lint
+    ```
+
+- To automatically fix linting issues:
+
+    ```bash
+    npm run lint:fix
+    ```
+
+- To format code using Prettier:
+
+    ```bash
+    npm run prettier
+    ```
+
+- To automatically fix code formatting issues:
+
+    ```bash
+    npm run prettier:fix
+    ```
+
+### Production
+
+To build the project for production:
+
+```bash
+npm run build
